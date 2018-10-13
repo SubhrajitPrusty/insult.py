@@ -49,7 +49,7 @@ def cli(pyfile):
 
 	if err:
 		print(Fore.RED + choice(messages))
-		print(Fore.MAGENTA + err)
+		print(Fore.CYAN + err)
 	else:
 		print(Fore.GREEN+ "What can you say! It finally worked!")
 		print(Style.RESET_ALL)
