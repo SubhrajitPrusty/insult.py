@@ -1,8 +1,10 @@
 import click
 import subprocess
-from colorama import Fore, Back, Style
+from colorama import Fore, Back, Style, init
 from random import choice
 import os
+
+init()
 
 @click.command()
 @click.argument("pyfile", nargs=1, type=click.Path(dir_okay=False, exists=True))
